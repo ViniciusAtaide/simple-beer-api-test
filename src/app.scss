@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
 // Mixins
-
 @import "~materialize-css/sass/components/mixins";
 @import "~materialize-css/sass/components/color";
+
+// Variable Override Theme
+$primary-color: color("green", "darken-1") !default;
+$secondary-color: color("teal", "lighten-2") !default;
 
 // Variables;
 @import "~materialize-css/sass/components/variables";
@@ -42,3 +45,4 @@
 // @import "~materialize-css/sass/components/date_picker/default";
 // @import "~materialize-css/sass/components/date_picker/default.date";
 // @import "~materialize-css/sass/components/date_picker/default.time";
+

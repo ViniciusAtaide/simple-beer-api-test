@@ -1,18 +1,23 @@
 <template lang="pug">
-  div#app.container
-    h1 Bem-vindo à Taverna Simplista
-    router-view
+  div
+    top-menu
+    div#app.container
+      div.row
+        h1 Bem-vindo à Taverna Simplista
+        router-view
 </template>
 
-<script>
-export default {
-  name: 'app'
-}
+<script>  
+  import TopMenu from './components/TopMenu.vue'
+
+  export default {
+    name: 'app',
+    components: {
+      TopMenu
+    }
+  }
 </script>
 
 <style lang="sass">
-@import 'app'
-
-h1
-  font-size: 28px
+  @import 'app'
 </style>
